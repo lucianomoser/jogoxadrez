@@ -1,0 +1,1 @@
+C:\Projetos_C#\Udemy\C# Curso Completo de Programação Orientada a Objetos\Seção 05\xadrez-console-moser\xadrez-console-moser\bin\Debug\xadrez-console-moser.exe.config
