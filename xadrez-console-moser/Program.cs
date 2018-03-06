@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tabuleiro;
+
 
 namespace xadrez_console_moser
 {
@@ -11,12 +11,12 @@ namespace xadrez_console_moser
     {
         static void Main(string[] args)
         {
-            Posicao P;
+            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8,8);
 
-            P = new Posicao(3, 4);
-
-            Console.WriteLine("Posição " + P);
             Console.ReadLine();
+
+
+
 
         }
     }
