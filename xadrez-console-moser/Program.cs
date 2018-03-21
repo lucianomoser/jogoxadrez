@@ -12,7 +12,7 @@ namespace tabuleiro
             Tela.imprimirTabuleiro(tab);
 
             Console.ReadLine();
-
+            Console.Clear();
 
 
 
