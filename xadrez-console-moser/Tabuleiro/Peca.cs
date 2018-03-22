@@ -16,5 +16,11 @@
             this.qtdeMovimentos = 0;
         }
 
+        public void incrementarQtdadeMovimento()
+        {
+            this.qtdeMovimentos++;
+
+        }
+
     }
 }
