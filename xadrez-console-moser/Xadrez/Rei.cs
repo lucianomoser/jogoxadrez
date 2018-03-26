@@ -69,17 +69,14 @@ namespace Xadrez
             {
                 mat[pos.linha, pos.coluna] = true;
             }
-
-
             return mat;
-
         }
 
         private bool podeMover(Posicao pos)
         {
             Peca p = tab.peca(pos);           
 
-            return p.tab == null || p.cor != this.cor; ;
+            return p == null || p.cor != this.cor; ;
         }
 
         public override string ToString()
