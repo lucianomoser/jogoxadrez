@@ -8,4 +8,3 @@ C:\Luciano\Projetos\Udemy\Secao 05\jogoxadrez\xadrez-console-moser\obj\Debug\xad
 C:\Luciano\Projetos\Udemy\Secao 05\jogoxadrez\xadrez-console-moser\obj\Debug\xadrez-console-moser.pdb
 C:\Luciano\Projetos\Udemy\Secao 05\jogoxadrez\xadrez-console-moser\bin\Debug\xadrez-console-moser.exe
 C:\Luciano\Projetos\Udemy\Secao 05\jogoxadrez\xadrez-console-moser\bin\Debug\xadrez-console-moser.pdb
-C:\Luciano\Projetos\Udemy\Secao 05\jogoxadrez\xadrez-console-moser\obj\Debug\xadrez-console-moser.csprojResolveAssemblyReference.cache
