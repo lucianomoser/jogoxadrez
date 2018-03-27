@@ -16,7 +16,6 @@
             this.qtdeMovimentos = 0;
         }
 
-
         public bool existeMovimentosPossiveis()
         {
             bool[,] mat = movimentosPossiveis();
@@ -31,6 +30,11 @@
                 }
             }
             return false;
+        }
+
+        public bool podeMoverPara(Posicao destino)
+        {
+            return movimentosPossiveis()[destino.linha, destino.coluna];
         }
 
         public abstract bool[,] movimentosPossiveis();
