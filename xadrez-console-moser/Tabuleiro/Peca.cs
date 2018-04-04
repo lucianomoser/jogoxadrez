@@ -42,7 +42,11 @@
         public void incrementarQtdadeMovimento()
         {
             this.qtdeMovimentos++;
+        }
 
+        public void decrementarQtdadeMovimento()
+        {
+            this.qtdeMovimentos--;
         }
 
     }
