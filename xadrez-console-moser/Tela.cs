@@ -13,6 +13,10 @@ namespace tabuleiro
             imprimirPecasCaputuradas(partida);
             Console.WriteLine("Turno Partida: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("Você está em Xeque! ");
+            }
         }
 
         public static void imprimirPecasCaputuradas(PartidaDeXadrez partida)
