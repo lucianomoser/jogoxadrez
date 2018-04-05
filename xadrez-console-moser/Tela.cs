@@ -12,10 +12,17 @@ namespace tabuleiro
             Console.WriteLine();
             imprimirPecasCaputuradas(partida);
             Console.WriteLine("Turno Partida: " + partida.turno);
-            Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-            if (partida.xeque)
+            if (!partida.terminada)
             {
-                Console.WriteLine("Você está em Xeque! ");
+                Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                if (partida.xeque)
+                {
+                    Console.Write("XEQUE! ");
+                }
+            }
+            else{
+                Console.WriteLine("XEQUEMATE");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
 
