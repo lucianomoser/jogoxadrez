@@ -69,7 +69,7 @@ namespace Xadrez
             {
                 xeque = false;
             }
-            if (testeXaqueMate(adversaria(jogadorAtual)))
+            if (testeXequeMate(adversaria(jogadorAtual)))
             {
                 terminada = true;
             }
@@ -99,7 +99,7 @@ namespace Xadrez
 
         public void validarPosicaoDeDestino(Posicao origem, Posicao destino)
         {
-            if (!tab.peca(origem).podeMoverPara(destino))
+            if (!tab.peca(origem).movimentoPossivel(destino))
             {
                 throw new TabuleiroException("Posição de Destino Invalida! ");
             }
@@ -190,7 +190,7 @@ namespace Xadrez
             return false;
         }
 
-        public bool testeXaqueMate(Cor cor)
+        public bool testeXequeMate(Cor cor)
         {
             if (!estaEmXeque(cor))
             {
