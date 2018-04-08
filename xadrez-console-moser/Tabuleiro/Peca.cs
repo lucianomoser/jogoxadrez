@@ -16,6 +16,17 @@
             this.qtdeMovimentos = 0;
         }
 
+
+        public void incrementarQtdadeMovimento()
+        {
+            this.qtdeMovimentos++;
+        }
+
+        public void decrementarQtdadeMovimento()
+        {
+            this.qtdeMovimentos--;
+        }
+
         public bool existeMovimentosPossiveis()
         {
             bool[,] mat = movimentosPossiveis();
@@ -32,22 +43,13 @@
             return false;
         }
 
-        public bool movimentoPossivel(Posicao destino)
+        public bool movimentoPossivel(Posicao pos)
         {
-            return movimentosPossiveis()[destino.linha, destino.coluna];
+            return movimentosPossiveis()[pos.linha, pos.coluna];
         }
 
         public abstract bool[,] movimentosPossiveis();
-        
-        public void incrementarQtdadeMovimento()
-        {
-            this.qtdeMovimentos++;
-        }
-
-        public void decrementarQtdadeMovimento()
-        {
-            this.qtdeMovimentos--;
-        }
+      
 
     }
 }

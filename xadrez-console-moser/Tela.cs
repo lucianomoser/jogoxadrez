@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xadrez;
-namespace tabuleiro
+using tabuleiro;
+namespace xadrez_console
 {
     class Tela
     {
@@ -11,7 +12,7 @@ namespace tabuleiro
             imprimirTabuleiro(partida.tab);
             Console.WriteLine();
             imprimirPecasCaputuradas(partida);
-            Console.WriteLine("Turno Partida: " + partida.turno);
+            Console.WriteLine("Turno: " + partida.turno);
             if (!partida.terminada)
             {
                 Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);

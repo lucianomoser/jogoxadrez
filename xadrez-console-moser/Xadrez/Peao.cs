@@ -30,7 +30,8 @@ namespace Xadrez
             bool[,] mat = new bool[tab.linhas, tab.colunas];
             Posicao pos = new Posicao(0, 0);
 
-            if(cor == Cor.Branca){
+            if (cor == Cor.Branca)
+            {
                 pos.definirValores(posicao.linha - 1, posicao.coluna);
                 if (tab.posicaoValida(pos) && livre(pos))
                 {
@@ -79,9 +80,9 @@ namespace Xadrez
                     {
                         mat[pos.coluna, pos.linha] = true;
                     }
-                }               
+                }
             }
             return mat;
-        }      
+        }
     }
 }
